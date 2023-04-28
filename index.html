@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Coding Quiz</title>
+    </head>
+
+    <body>
+        <header> <h1>Quiz!</h1> </header>
+        <main class="card" id="card">
+
+            <section class="instruct" id="instruct">
+                <h2>Coding Quiz Challenge!</h2>
+                <p>Answer the multiple choice questions within the allotted time. If the question is answered incorrectly, there will be a time penalty!</p>
+                <div class="start">
+                    <button class="btn" id="start-btn">Start Quiz!</button>
+                </div>
+            </section>
+
+            <section class="quiz-container hide">
+                <h2 class="question"></h2>
+                <div class="answer-grid">
+                    <div class="answer-grid-item">
+                        <button class="btn" id="btn-a" value="a"></button>
+                    </div>
+                    <div class="answer-grid-item">
+                        <button class="btn" id="btn-b" value="b"></button>
+                    </div>
+                    <div class="answer-grid-item">
+                        <button class="btn" id="btn-c" value="c"></button>
+                    </div>
+                    <div class="answer-grid-item">
+                        <button class="btn" id="btn-d" value="d"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="end">
+            </section>
+            <div class="feedback hide"></div>
+        </main>
+        <footer>
+            <div class="scores-container">
+                <div class="high-score"> <a href="./highscores.html">View Scores</a> 
+                </div>
+            </div>
+            <div class="score"></div>
+        </footer>
+
+    </body>
+
+    <script src="./assets/js/script.js"></script>
+</html>
